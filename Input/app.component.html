@@ -1,0 +1,9 @@
+<app-login [childproperty]="parentproperty" [f]="submit()"></app-login>
+
+
+
+<p>Num1: <input [(ngModel)]="num1"></p>
+<p>Num2: <input [(ngModel)]="num2"></p>
+
+<button (click)="addition()">Addition</button>
+<h1 [innerHTML]="result">Adding inputBox Numbers</h1>
