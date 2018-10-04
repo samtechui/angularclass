@@ -1,0 +1,9 @@
+<h1>app html here</h1>
+<app-login (userCreated)="onuserCreated($event)"></app-login>
+
+
+
+<div *ngFor='let user of userDetails'>
+  <h3>{{user.userName}}</h3>
+  <h3>{{user.userPwd}}</h3>
+</div>
