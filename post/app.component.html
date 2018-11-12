@@ -1,0 +1,14 @@
+<button (click)="ss()">GET</button>
+<div>
+  <h1>{{name}}</h1>
+</div>
+<input type="text" (keyup)="keyupevent($event)" >
+<!--<div>
+  {{student.name }}}
+</div>-->
+<div *ngFor="let students of std">
+ STUDENT  NAME:<h1>{{students.name}}</h1>
+  STUDENT ID :<h1>{{students.id}}</h1>
+  STUDENT AGE :<h1>{{students.age}}</h1><br>
+</div>
+<button (click)="postd()">POST</button>
