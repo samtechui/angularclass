@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1 id="h1t"></h1>
+<p id="pt"></p>
+<p id="pt1"></p>
+<table><tr><td id="td1"></td><td id="td2"></td></tr></table>
+
+<script>
+
+    var a='sampath';
+ var persons=['sampath','jhon','rahul',2,20,3];
+
+
+ alert(persons.length);
+for (var i=0;i<persons.length;i++){
+    console.log(persons[i]);
+}
+   var students = [
+       {name:'rahul',id:101},
+       {name:'jhon',id:102},
+       {name:'tim',id:103}
+       ];
+var student = {};
+   var person = {name:'rahul',id:101};
+
+   console.log(person.name);
+
+   document.getElementById('h1t').innerHTML = person.name;
+
+   var name1='';
+   var id1='';
+   for (var i=0;i<students.length;i++){
+       name1= name1+students[i].name +'<br>'; //name1+=students[i].name;
+       id1= id1+students[i].id +'<br>'; //name1+=students[i].name;
+       var text = name1;
+      var txt1 = id1;
+   }
+
+    document.getElementById('td1').innerHTML=text;
+    document.getElementById('td2').innerHTML=txt1;
+
+
+
+
+</script>
+
+</body>
+</html>
